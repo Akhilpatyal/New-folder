@@ -4262,17 +4262,21 @@
    </script>
 
    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-         const navLinks = document.querySelectorAll("#collapsibleNavbar .nav-link");
-         const navbarCollapse = document.getElementById("collapsibleNavbar");
-         const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+     document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll("#collapsibleNavbar .nav-link");
+    const navbarToggler = document.querySelector(".navbar-toggler"); // Select the toggle button
 
-         navLinks.forEach(link => {
-            link.addEventListener("click", function () {
-               bsCollapse.hide(); // Hide the navbar
-            });
-         });
-      });
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            if (window.innerWidth <= 768) { // Only collapse on mobile
+                setTimeout(() => {
+                    navbarToggler.click(); // Programmatically click the toggle button
+                }, 200); // Small delay to ensure smooth transition
+            }
+        });
+    });
+});
+
    </script>
 </body>
 
