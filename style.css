@@ -6041,3 +6041,17 @@ form#enquiry-form-common .second-name-div {
   position: relative;
   z-index: 2; /* Ensures content stays above the overlay */
 }
+
+
+
+.price ul {
+  list-style: circle;
+  background-color: #14191960;
+  /* background-image: url('images/mask.png'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 30px;
+  border-radius: 10px;
+  height: 100%; width: 100%;
+}
