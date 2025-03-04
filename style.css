@@ -6068,3 +6068,7 @@ form#enquiry-form-common .second-name-div {
   padding: 10px;
   font-weight: 500;
 }
+
+.gallery_tab_sec .item{
+  border-radius: 10px;
+}
