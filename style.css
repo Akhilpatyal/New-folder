@@ -6055,3 +6055,16 @@ form#enquiry-form-common .second-name-div {
   border-radius: 10px;
   height: 100%; width: 100%;
 }
+.look_bot_link .flex_lin{
+  background: linear-gradient(to left, black, rgba(255, 255, 0, 0.808));
+ padding: 20px;
+ border-radius: 10px;
+}
+.look_bot_link:hover{
+ scale: 1.01;
+}
+.look_bot_link .flex_lin p a{
+  color: #ffffff;
+  padding: 10px;
+  font-weight: 500;
+}

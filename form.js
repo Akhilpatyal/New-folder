@@ -56,7 +56,7 @@ async function handleFormSubmit(formId) {
 
         const payload = {
             page_url: "brigade-yelahanka.bangalorenewproperties.in",
-            project_name: "birlasarjapur",
+            project_name: "Brigade Yelahanka",
             name: name,
             mobile: phone,
             city: city
@@ -103,4 +103,4 @@ async function handleFormSubmit(formId) {
 handleFormSubmit('ajax-header-contact'); // First form
 handleFormSubmit('ajax-header-contact-2'); // Second form
 handleFormSubmit('ajax-header-contact-3'); // Third form
-handleFormSubmit('ajax-header-contact-4'); // forth form
+// handleFormSubmit('ajax-header-contact-4'); // forth form
