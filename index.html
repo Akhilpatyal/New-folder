@@ -1776,6 +1776,7 @@
             }
             prevScrollpos = currentScrollPos;
          }
+      }
    </script>
    <script>
             if ($(window).width() > 1024) {
@@ -2024,8 +2025,8 @@
                }
             }
 
-            call_modal_trigger.addEventListener("click", call_toggleModal);
-            call_closeButton.addEventListener("click", call_toggleModal);
+            // call_modal_trigger.addEventListener("click", call_toggleModal);
+            // call_closeButton.addEventListener("click", call_toggleModal);
             window.addEventListener("click", call_windowOnClick);
    </script>
    <script>
@@ -2404,7 +2405,7 @@
 
             });
    </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js"></script> -->
 
    <script src="https://d1di04ifehjy6m.cloudfront.net/static/brigade/js/aos.js"></script>
    <script src="https://d1di04ifehjy6m.cloudfront.net/static/brigade/js/lazyframe.min.js"></script>
@@ -2425,7 +2426,7 @@
    <script>
             AOS.init();
    </script>
-   <script>
+   <!-- <script>
             var slider = document.getElementById("myRange_1");
             var output = document.getElementById("demo_1");
 
@@ -2446,7 +2447,7 @@
             slider_2.addEventListener("input", function () {
                output_2.textContent = this.value;
             });
-   </script>
+   </script> -->
    <script>
             $("#our_awrads_owl-carousel_detail_new").owlCarousel({
 
@@ -4042,52 +4043,7 @@
 
 
    </script>
-   <script>
-            var slider1 = document.getElementById("myRange_1");
-            var slider2 = document.getElementById("myRange_2");
-            var slider3 = document.getElementById("myRange_3");
-            var output1 = document.getElementById("demo_1");
-            var output2 = document.getElementById("demo_2");
-            var output3 = document.getElementById("demo_3");
-            var emiOutput = document.querySelector(".estimated_loan_am");
-
-            output1.textContent = slider1.value;
-            output2.textContent = slider2.value + "%";
-            output3.textContent = slider3.value + " Years";
-
-            slider1.addEventListener("input", function () {
-               output1.textContent = this.value;
-               calculateEMI();
-            });
-
-            slider2.addEventListener("input", function () {
-               output2.textContent = this.value + "%";
-               calculateEMI();
-            });
-
-            slider3.addEventListener("input", function () {
-               output3.textContent = this.value + " Years";
-               calculateEMI();
-            });
-
-            function calculateEMI() {
-               var loanAmount = parseFloat(slider1.value);
-               var interestRate = parseFloat(slider2.value) / 100;
-               var tenure = parseInt(slider3.value) * 12;
-               var monthlyInterestRate = interestRate / 12;
-               var emi = loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, tenure) / (Math.pow(1 + monthlyInterestRate, tenure) - 1);
-               var formattedLoanAmount = formatIndianCurrency(loanAmount);
-               var formattedEMI = formatIndianCurrency(Math.round(emi));
-               output1.textContent = formattedLoanAmount;  // Update loan amount display
-               emiOutput.textContent = "₹" + formattedEMI;
-            }
-
-            function formatIndianCurrency(amount) {
-               var formatter = new Intl.NumberFormat('en-IN');
-               return formatter.format(amount);
-            }
-
-   </script>
+   
    <script>
             $(document).ready(function () {
 
@@ -4269,7 +4225,6 @@
                elem.style.display = 'none';
             }
          }
-      }
    </script>
    <script>
       $("#banner_carousel_cus_list,#banner_carousel_cus_list_mobile").owlCarousel({
